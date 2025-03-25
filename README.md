@@ -110,6 +110,6 @@ Eduardo
 - Adicionou a funcionalidade de reinício do jogo ao chegar a um final.
 
 ## 🔗 Acesse o Jogo:
-
+https://du341.github.io/nexus-aventureiro-digital/
 
 
