@@ -22,8 +22,6 @@ Desafio do Aventureiro Digital" é um jogo interativo baseado em texto, onde voc
 
 ## 📂 Estrutura de Pastas 
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto.
-
 
 ## 🖥️ Ferramentas de Desenvolvimento
 ![image](https://github.com/user-attachments/assets/8be9f347-f3c2-4376-8e36-e77e7d631a16)
