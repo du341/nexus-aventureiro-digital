@@ -2,14 +2,14 @@
 import gameData from './gameData.js';
 
 // Seleciona elementos HTML que serão manipulados no jogo
-const storyText = document.getElementById('story-text');
-const choicesDiv = document.getElementById('choices');
-const restartBtn = document.getElementById('restart-btn');
-const pointsSpan = document.getElementById('points');
-const feedbackDiv = document.getElementById('feedback');
-const audioPositive = document.getElementById('audio-positive');
-const audioNegative = document.getElementById('audio-negative');
-const baloon = document.getElementById('dica-baloon');
+const storyText = document.querySelector('#story-text');
+const choicesDiv = document.querySelector('#choices');
+const restartBtn = document.querySelector('#restart-btn');
+const pointsSpan = document.querySelector('#points');
+const feedbackDiv = document.querySelector('#feedback');
+const audioPositive = document.querySelector('#audio-positive');
+const audioNegative = document.querySelector('#audio-negative');
+const baloon = document.querySelector('#dica-baloon');
 
 // Objeto para controlar o minigame de palavras
 let minigame = {
@@ -139,8 +139,8 @@ function criarInputTentativa() {
         <p>Tentativas restantes: ${minigame.maxAttempts - minigame.attempts}</p>
     `;
 
-    document.getElementById('guess-btn').addEventListener('click', () => {
-        const palpite = document.getElementById('guess').value.toLowerCase(); // Obtém o palpite do jogador
+    document.querySelector('#guess-btn').addEventListener('click', () => {
+        const palpite = document.querySelector('#guess').value.toLowerCase(); // Obtém o palpite do jogador
         minigame.attempts++; // Incrementa as tentativas
 
         if (palpite === minigame.word) {
