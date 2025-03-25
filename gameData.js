@@ -1,4 +1,4 @@
-export const gameData = {
+const gameData = {
     points: 0,
     currentPhase: "fase1",
     fases: {
@@ -53,3 +53,5 @@ export const gameData = {
         finalF: " Hacker supremo!\n\nVocê desativa a IA com Unit-X e recupera o controle da Nexus."
     }
 };
+
+export default gameData;
