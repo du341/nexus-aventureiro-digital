@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus: O Último Humano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Personagem + Balão -->
+    <img id="avatar" src="img/astronauta.gif" alt="Aventureiro">
+    <div id="dica-baloon"></div>
+
+    <!-- Jogo -->
+    <div id="game-container">
+        <h1>Nexus: O Último Humano</h1>
+        <div id="status">Pontuação: <span id="points">0</span></div>
+        <p id="story-text"></p>
+        <div id="choices"></div>
+        <div id="feedback"></div>
+        <button id="restart-btn" style="display:none;">Reiniciar</button>
+    </div>
+
+    <!-- Sons -->
+    <audio id="audio-positive" src="audio/positive.mp3"></audio>
+    <audio id="audio-negative" src="audio/negative.mp3"></audio>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

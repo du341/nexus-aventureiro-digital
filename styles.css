@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('img/fase1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.5s ease-in-out;
+}
+
+#game-container {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3), 0 0 30px rgba(0, 240, 255, 0.1);
+    position: relative;
+    z-index: 5;
+}
+
+
+h1 {
+    font-size: 26px;
+    color: #00f0ff;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff, 0 0 15px #00f0ff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    animation: flicker 2s infinite alternate;
+}
+
+#status {
+    font-size: 14px;
+    color: #00f0ff;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+    margin-bottom: 10px;
+}
+
+#feedback {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+}
+
+button {
+    background: rgba(0, 0, 50, 0.8);
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    animation: pulse 2s infinite;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background: rgba(0, 0, 70, 0.9);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.9);
+    transform: scale(1.05);
+}
+
+/* Avatar flutuante */
+#avatar {
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    animation: float 2s infinite alternate;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+/* Balão de dica */
+#dica-baloon {
+    position: fixed;
+    bottom: 100px;
+    left: 120px;
+    background: #ffffff;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 10;
+}
+
+#dica-baloon::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+/* Animações */
+@keyframes flicker {
+    0% { opacity: 1; text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff; }
+    50% { opacity: 0.9; text-shadow: 0 0 2px #00f0ff, 0 0 6px #00f0ff; }
+    100% { opacity: 1; text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff; }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(0, 240, 255, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(0, 240, 255, 0.8); }
+    100% { box-shadow: 0 0 10px rgba(0, 240, 255, 0.5); }
+}
+
+
