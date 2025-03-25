@@ -32,10 +32,10 @@ Navegue pelas pastas do projeto e entenda o que cada uma contém:
 Imagens utilizadas na documentação, no README e no app.
 
 🧠 src
-Código-fonte principal do projeto, dividido em Backend (API) e Frontend (app mobile).
+Código-fonte principal do projeto.
 
 👩‍💻 Backend
-S
+
 🎨 Frontend
 
 
