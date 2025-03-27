@@ -20,11 +20,6 @@ Agora, sua missão é clara: explorar os domínios instáveis do Nexus, desvenda
 ## 🔎 Descrição
 Desafio do Aventureiro Digital" é um jogo interativo baseado em texto, onde você assume o papel de um aventureiro em uma jornada repleta de escolhas perigosas, mistérios e desafios inesperados. A cada decisão tomada, a história se transforma, levando você por caminhos distintos que podem te levar à glória… ou ao fim da jornada. Com uma narrativa dinâmica e fases interligadas, o jogo combina simplicidade técnica com imersão criativa. O jogador precisa escolher sabiamente, gerenciar suas vidas e enfrentar enigmas para avançar até o desfecho da aventura.
 
-## 📂 Estrutura de Pastas 
-
-
-## 🖥️ Ferramentas de Desenvolvimento
-![image](https://github.com/user-attachments/assets/8be9f347-f3c2-4376-8e36-e77e7d631a16)
 
 🖥️ Tecnologias Utilizadas
 HTML5
